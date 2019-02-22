@@ -3,7 +3,7 @@
 ============LICENSE_START=======================================================
 ONAP : APPC
 ================================================================================
-Copyright (C) 2018 AT&T Intellectual Property. All rights reserved.
+Copyright (C) 2018-2019 AT&T Intellectual Property. All rights reserved.
 =============================================================================
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ limitations under the License.
     <parent>
         <groupId>org.onap.ccsdk.parent</groupId>
         <artifactId>binding-parent</artifactId>
-        <version>1.1.3</version>
+        <version>1.2.1-SNAPSHOT</version>
         <relativePath />
     </parent>
 
@@ -89,42 +89,76 @@ limitations under the License.
         <sdnctl.dblib.version>${ccsdk.sli.core.version}</sdnctl.dblib.version>
         <sdnctl.sli.version>${ccsdk.sli.core.version}</sdnctl.sli.version>
         <commons.collections.version>3.2.2</commons.collections.version>
-        <odl.sal.api.gen.plugin.version>0.12.3</odl.sal.api.gen.plugin.version>
+        <odl.sal.api.gen.plugin.version>0.13.1</odl.sal.api.gen.plugin.version>
         <odl.yang.jmx.generator.version>0.8.3</odl.yang.jmx.generator.version>
         <odl.controller.config.api.version>0.8.3</odl.controller.config.api.version>
     </properties>
-    <dependencyManagement>
-    <dependencies>
-            <dependency>
-            <groupId>org.opendaylight.controller</groupId>
-            <artifactId>config-api</artifactId>
-            <version>${odl.controller.config.api.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>${snakeyaml.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>equinoxSDK381</groupId>
-            <artifactId>org.eclipse.osgi</artifactId>
-            <version>${equinox.osgi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
-            <version>${mariadb.client.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.sshd</groupId>
-            <artifactId>sshd-core</artifactId>
-            <version>${apache.sshd.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity</artifactId>
-            <version>${velocity.version}</version>
-        </dependency>
-    </dependencies>
-    </dependencyManagement>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.opendaylight.controller</groupId>
+				<artifactId>config-api</artifactId>
+				<version>${odl.controller.config.api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.opendaylight.controller</groupId>
+				<artifactId>sal-binding-config</artifactId>
+				<version>${odl.mdsal.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.yaml</groupId>
+				<artifactId>snakeyaml</artifactId>
+				<version>${snakeyaml.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>equinoxSDK381</groupId>
+				<artifactId>org.eclipse.osgi</artifactId>
+				<version>${equinox.osgi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mariadb.jdbc</groupId>
+				<artifactId>mariadb-java-client</artifactId>
+				<version>${mariadb.client.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sshd</groupId>
+				<artifactId>sshd-core</artifactId>
+				<version>${apache.sshd.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.velocity</groupId>
+				<artifactId>velocity</artifactId>
+				<version>${velocity.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.onap.ccsdk.sli.core</groupId>
+				<artifactId>sli-common</artifactId>
+				<version>${ccsdk.sli.core.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.onap.ccsdk.sli.core</groupId>
+				<artifactId>sli-provider</artifactId>
+				<version>${ccsdk.sli.core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.onap.ccsdk.sli.core</groupId>
+				<artifactId>ccsdk-sli</artifactId>
+				<version>${ccsdk.sli.core.version}</version>
+				<type>xml</type>
+				<classifier>features</classifier>
+			</dependency>
+			<dependency>
+				<groupId>org.onap.ccsdk.sli.adaptors</groupId>
+				<artifactId>aai-service-provider</artifactId>
+				<version>${sdnctl.aai.service.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.onap.ccsdk.sli.core</groupId>
+				<artifactId>dblib-provider</artifactId>
+				<version>${sdnctl.dblib.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
