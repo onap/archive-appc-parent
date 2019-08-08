@@ -34,7 +34,7 @@ limitations under the License.
         <version>1.2.1</version>
         <relativePath />
     </parent>
-    
+
     <properties>
         <snakeyaml.version>1.12</snakeyaml.version>
         <commons-codec.version>1.12</commons-codec.version>

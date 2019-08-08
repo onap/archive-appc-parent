@@ -34,7 +34,7 @@ limitations under the License.
         <version>1.2.1</version>
         <relativePath />
     </parent>
-    
+
     <properties>
         <commons-codec.version>1.12</commons-codec.version>
         <skip.karaf.featureTest>true</skip.karaf.featureTest>
@@ -51,34 +51,34 @@ limitations under the License.
                 <version>${commons-codec.version}</version>
             </dependency>
             <dependency>
-				<groupId>org.onap.ccsdk.sli.core</groupId>
-				<artifactId>sli-common</artifactId>
-				<version>${ccsdk.sli.core.version}</version>
-			</dependency>
+                <groupId>org.onap.ccsdk.sli.core</groupId>
+                <artifactId>sli-common</artifactId>
+                <version>${ccsdk.sli.core.version}</version>
+            </dependency>
 
-			<dependency>
-				<groupId>org.onap.ccsdk.sli.core</groupId>
-				<artifactId>sli-provider</artifactId>
-				<version>${ccsdk.sli.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.onap.ccsdk.sli.core</groupId>
-				<artifactId>ccsdk-sli</artifactId>
-				<version>${ccsdk.sli.core.version}</version>
-				<type>xml</type>
-				<classifier>features</classifier>
-			</dependency>
-			<dependency>
-				<groupId>org.onap.ccsdk.sli.adaptors</groupId>
-				<artifactId>aai-service-provider</artifactId>
-				<version>${sdnctl.aai.service.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>org.onap.ccsdk.sli.core</groupId>
+                <artifactId>sli-provider</artifactId>
+                <version>${ccsdk.sli.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.onap.ccsdk.sli.core</groupId>
+                <artifactId>ccsdk-sli</artifactId>
+                <version>${ccsdk.sli.core.version}</version>
+                <type>xml</type>
+                <classifier>features</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.onap.ccsdk.sli.adaptors</groupId>
+                <artifactId>aai-service-provider</artifactId>
+                <version>${sdnctl.aai.service.version}</version>
+            </dependency>
 
-			<dependency>
-				<groupId>org.onap.ccsdk.sli.core</groupId>
-				<artifactId>dblib-provider</artifactId>
-				<version>${sdnctl.dblib.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>org.onap.ccsdk.sli.core</groupId>
+                <artifactId>dblib-provider</artifactId>
+                <version>${sdnctl.dblib.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
