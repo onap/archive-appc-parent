@@ -1,0 +1,4 @@
+distribution_type: 'maven'
+version: '2.6.1'
+project: 'appc/parent'
+log_dir: 'appc-parent-maven-stage-master/193/'
