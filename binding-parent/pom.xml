@@ -56,14 +56,13 @@ limitations under the License.
         <commons.lang3.version>3.4</commons.lang3.version>
         <antlr.version>4.5.1</antlr.version>
         <logback.version>1.2.3</logback.version>
-        <toscalib.version>1.1.0</toscalib.version>
         <sdc-client.version>1.3.0</sdc-client.version>
         <!-- Should match the version used by sdc-distribution-client -->
         <saClientLibrary.version>0.0.1</saClientLibrary.version>
         <!-- Should match the version used by sdc-distribution-client -->
         <cambriaClient.version>0.0.1</cambriaClient.version>
         <jackson.yml.version>2.3.2</jackson.yml.version>
-        <tosca.datatype.version>1.1.0</tosca.datatype.version>
+        <tosca.datatype.version>1.5.2</tosca.datatype.version>
         <velocity.version>1.7</velocity.version>
         <xmlunit.version>1.6</xmlunit.version>
         <xmlunit-core.version>2.3.0</xmlunit-core.version>
