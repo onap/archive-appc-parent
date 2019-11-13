@@ -62,7 +62,7 @@ limitations under the License.
         <!-- Should match the version used by sdc-distribution-client -->
         <cambriaClient.version>0.0.1</cambriaClient.version>
         <jackson.yml.version>2.3.2</jackson.yml.version>
-        <tosca.datatype.version>1.5.2</tosca.datatype.version>
+        <tosca.datatype.version>1.5.0</tosca.datatype.version>
         <velocity.version>1.7</velocity.version>
         <xmlunit.version>1.6</xmlunit.version>
         <xmlunit-core.version>2.3.0</xmlunit-core.version>
