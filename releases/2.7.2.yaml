@@ -1,0 +1,4 @@
+distribution_type: 'maven'
+version: '2.7.2'
+project: 'appc/parent'
+log_dir: 'appc-parent-maven-stage-frankfurt/14/'
